@@ -7,6 +7,7 @@ float dot_product(vec4_t a, vec4_t b){
 }
 
 #ifdef ACCELERATED
+#include <x86intrin.h>
 //SSE2 version of dot product
 
 //See: https://stackoverflow.com/a/42924346/296460
